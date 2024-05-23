@@ -4,14 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="player.css">
+    <title>Tic-Tac-Toe Vs Player</title>
 </head>
 
 <body>
-    <h1>Tic-Tac-Toe</h1>
+    <h1 class="heading">Tic Tac Toe</h1>
     <!-- game layout -->
-    <h1 id="winnerHd">Player O's turn</h1>
+    <div class="winnerHd-div">
+        <div class="transition">
+            <h1 id="winnerHd">Player O's turn</h1>
+        </div>
+    </div>
     <div class="game-layout">
 
         <button class="game-btn"></button>
@@ -20,16 +24,15 @@
         <button class="game-btn"></button>
         <button class="game-btn"></button>
         <button class="game-btn"></button>
-        <button class="game-btn"></button>
-        <button class="game-btn"></button>
-        <button class="game-btn"></button>
+        <button class="game-btn" style="margin-bottom: 0;"></button>
+        <button class="game-btn" style="margin-bottom: 0;"></button>
+        <button class="game-btn" style="margin-bottom: 0;"></button>
 
     </div>
 
-    <br>
     <button class="reset-btn">Reset Button</button>
 
-    <script src="script.js"></script>
+    <script src="player.js"></script>
 </body>
 
 </html>
