@@ -2,6 +2,7 @@ let btnGame = document.querySelectorAll(".game-btn");
 let rstBtn = document.querySelector(".reset-btn");
 let winnerHd = document.querySelector("#winnerHd");
 let transitionDiv=document.querySelector(".transition");
+let homeBtn=document.querySelector(".home-btn");
 let turnO = true; //playerO turn if true
 let win = false;
 let corners = [0, 2, 6, 8];
@@ -39,6 +40,22 @@ rstBtn.addEventListener("mouseout",()=>{
     rstBtn.style.backgroundColor="#292F36";
     rstBtn.style.color="#F7FFF7";
     rstBtn.style.borderColor="#A9927D";
+});
+
+homeBtn.addEventListener("mouseover",()=>{
+    homeBtn.style.backgroundColor="#A9927D";
+    homeBtn.style.color="black";
+    homeBtn.style.borderColor="#292F36";
+});
+
+homeBtn.addEventListener("mouseout",()=>{
+    homeBtn.style.backgroundColor="#292F36";
+    homeBtn.style.color="#F7FFF7";
+    homeBtn.style.borderColor="#A9927D";
+});
+
+homeBtn.addEventListener("click",()=>{
+    window.location.href="home.html";
 });
 
 //reset button implementation

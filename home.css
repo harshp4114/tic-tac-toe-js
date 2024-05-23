@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0A0908;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #F2F4F3;
+    text-align: center;
+}
+
+.heading{
+    color: #0A0908;
+    font-size: 7rem;
+    display: block;
+    border: 10px solid #A9927D;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #5E503F;
+}
+
+.bg-layout{
+    height: 80vh;
+}
+
+.upper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 50%;
+}
+
+.first-upper{
+    font-size: 16rem;
+    opacity: 0.7;
+}
+
+.second-upper{
+    font-size: 16rem;
+    opacity: 0.7;
+}
+
+.third-upper{
+    font-size: 16rem;
+    opacity: 0.7;
+}
+
+.fourth-upper{
+    font-size: 16rem;
+    opacity: 0.7;
+}
+
+.fifth-upper{
+    font-size: 16rem;
+    opacity: 0.7;
+}
+
+.sixth-upper{
+    font-size: 16rem;
+    opacity: 0.7;
+}
+
+.lower{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 50%;
+}
+
+.first-lower{
+    font-size: 16rem;
+    opacity: 0.7;
+}
+
+.second-lower{
+    font-size: 16rem;
+    opacity: 0.7;
+}
+
+.third-lower{
+    font-size: 16rem;
+    opacity: 0.7;
+}
+
+.fourth-lower{
+    font-size: 16rem;
+    opacity: 0.7;
+}
+
+.fifth-lower{
+    font-size: 16rem;
+    opacity: 0.7;
+}
+
+.sixth-lower{
+    font-size: 16rem;
+    opacity: 0.7;
+}
+
+.play-div{
+    height: 350px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    background-color: #5E503F;
+    position: absolute;
+    top: 245px;
+    left: 345px;
+    border-radius: 20px;
+    opacity: 1;
+    z-index: 2;
+    border: 10px solid #A9927D;
+}
+
+.play-btn-vsComp{
+    width: 500px;
+    height: 95px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 7px solid black;
+    border-radius: 10px;
+    background-color: #A9927D;
+    color: black;
+    font-size: 35px;
+    transition: all 0.4s ease-in-out;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.play-btn-vsPlayer{
+    width: 500px;
+    height: 95px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 7px solid black;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+    background-color: #A9927D;
+    color: black;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

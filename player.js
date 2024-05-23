@@ -4,6 +4,7 @@ let turnO = true; //playerO turn if true
 let win = false;
 let winnerHd=document.querySelector("#winnerHd");
 let transitionDiv=document.querySelector(".transition");
+let homeBtn=document.querySelector(".home-btn");
 let first=0,second=1,third=2;
 let gameDraw=0;
 let winningPatterns = [
@@ -27,6 +28,22 @@ rstBtn.addEventListener("mouseout",()=>{
     rstBtn.style.backgroundColor="#292F36";
     rstBtn.style.color="#F7FFF7";
     rstBtn.style.borderColor="#A9927D";
+});
+
+homeBtn.addEventListener("mouseover",()=>{
+    homeBtn.style.backgroundColor="#A9927D";
+    homeBtn.style.color="black";
+    homeBtn.style.borderColor="#292F36";
+});
+
+homeBtn.addEventListener("mouseout",()=>{
+    homeBtn.style.backgroundColor="#292F36";
+    homeBtn.style.color="#F7FFF7";
+    homeBtn.style.borderColor="#A9927D";
+});
+
+homeBtn.addEventListener("click",()=>{
+    window.location.href="home.html";
 });
 
 function updateTextWithTransition(text) {
@@ -65,7 +82,7 @@ rstBtn.addEventListener("click",()=>{
     for(let btn of btnGame){
         btn.innerText="";
         btn.disabled=false;
-        winnerHd.innerText="Player O's turn";
+        updateTextWithTransition("Player O's turn");
         gameDraw=0;
         turnO=true;
         win=false;
@@ -86,7 +103,8 @@ function checkResult(){
         if(btnGame[winningPatterns[i][first]].innerText!="" && btnGame[winningPatterns[i][second]].innerText!="" && btnGame[winningPatterns[i][third]].innerText!="" ){
             if(btnGame[winningPatterns[i][first]].innerText==btnGame[winningPatterns[i][second]].innerText && btnGame[winningPatterns[i][second]].innerText==btnGame[winningPatterns[i][third]].innerText){
                 win=true;
-                winnerHd.innerText="Winner is player "+btnGame[winningPatterns[i][first]].innerText;
+                Text="Winner is player "+btnGame[winningPatterns[i][first]].innerText;
+                updateTextWithTransition(Text);
                 disableAll();
             }
             else{
